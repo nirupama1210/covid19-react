@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.w_90per{
+    width: 90%;
+}
+
+.h_40px{    
+    height: 40px;
+}
+
+.rt {
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    color: blue;
+}
+#d1{
+  font-size: 30px;
+    color: blue;
+    
+}
+.lt {
+    position: absolute;
+    left: 30px;
+}
+
+.t-a{
+    text-align: left;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 10px 10px -1px rgb(221, 252, 252);
+    padding-bottom: 20px;
+}
+
+nav div {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+nav div button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 10px;
+    color: blue;
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: fixed;
+    bottom: 20px;
+    left: 5vw;
+}
+
+.overall-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E23129;
+    background-color: #FDF2F2;
+    text-align: center;
+    width: max-content;
+    padding: 0 5px;
+}
+
+.date {
+  color: #8682ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total {
+    text-align: right;
+    color: #3F3AAE;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.color_ADABDC {
+    text-align: right;
+    color: #8682ff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.search-container {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #8682ff;
+    font-weight: bold;
+}
+
+.search-container>div:nth-child(odd){
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+     
+}
+#clock {
+  width: 35px;
+  height: 3px;
+  margin-top: 10px;
+}
+#header-search{
+  background-color: rgb(215, 255, 252);
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.search-container>div>span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.search-icon {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.search-container>div>input {
+    outline: 0;
+    border: 0;
+    margin-left: 2px;
+    font-size: 20px;
+}
+
+.output {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin: 20px auto;
+    /* background-color: rgb(223, 252, 248); */
+}
+
+.output>div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.confirmed:hover{
+    background-color: #fedede;
+}
+
+.active:hover{
+    background-color: #cee7ff;
+}
+
+.recovered:hover{
+    background-color: #ccffcc ;
+}
+
+.deceased:hover{
+    background-color: #dadada;
+}
+
+.stats-containers {
+    padding: 0.5em 0;
+    width: 15vw;
+}
+
+.stats-containers>span{
+    display: block;
+}
+
+.stats-containers>span:nth-child(2){
+    height: 40px;
+}
+
+.confirmed {
+    color: #ff1043;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+.confirmed:hover{
+  box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+
+.active {
+    color: #037aff;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+.active:hover{
+  box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+
+.recovered {
+    color: #33ab4f;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+.recovered:hover{
+  box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+
+.deceased {
+    color: #6c767f;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+.deceased:hover{
+  box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+
+.tested {
+    color: #4944B0;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+.tested:hover{
+  box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+  0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+.stats-head {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.stats-current {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* STATE COMPONENT */
+table {
+    color: #6a6f74;
+    margin: 2rem auto;
+    width: 90vw;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    
+}
+
+th {
+  background-color: #47fff0;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+td {
+    background-color: #e1f8f6;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icon {
+    color: #6a6f74;
+}
+.button-class{
+
+}
+.icon:active,
+.icon:focus {
+    color: black;
+}
+
+.sortable>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+
+
+}
+
+.hide {
+    display: none;
+}
+
+.info:hover{
+    display: none;
+}
+
+.info:hover + .hide {
+    display: block;
+}
+
+.sortable>div>div:nth-child(1){
+    align-self: center;
+}
+
+td>div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+td>div>span:nth-child(2){
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.recovery-ratio {
+    text-align: right;
+    padding-right: 20px;
+}
+
+table tr:hover .state-name,table tr:hover td {
+    background-color: #d5d5d5;
+    transform: scale(1.1);
+}
