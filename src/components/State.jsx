@@ -81,14 +81,7 @@ export default function State() {
 
     return (
         <>
-            <nav>
-                <Link to="/">
-                    <div className='lt'>
-                        <div><FontAwesomeIcon icon={faAngleLeft} /></div>
-                        <button>Home</button>
-                    </div>
-                </Link>
-            </nav>
+            
             <table>
                 <thead>
                     <tr>
